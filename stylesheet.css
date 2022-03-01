@@ -1,0 +1,271 @@
+/* http://meyerweb.com/eric/tools/css/reset/ 
+   v2.0 | 20110126
+   License: none (public domain)
+*/
+
+html,
+body,
+div,
+span,
+applet,
+object,
+iframe,
+h1,
+h2,
+h3,
+h4,
+h5,
+h6,
+p,
+blockquote,
+pre,
+a,
+abbr,
+acronym,
+address,
+big,
+cite,
+code,
+del,
+dfn,
+em,
+img,
+ins,
+kbd,
+q,
+s,
+samp,
+small,
+strike,
+strong,
+sub,
+sup,
+tt,
+var,
+b,
+u,
+i,
+center,
+dl,
+dt,
+dd,
+ol,
+ul,
+li,
+fieldset,
+form,
+label,
+legend,
+table,
+caption,
+tbody,
+tfoot,
+thead,
+tr,
+th,
+td,
+article,
+aside,
+canvas,
+details,
+embed,
+figure,
+figcaption,
+footer,
+header,
+hgroup,
+menu,
+nav,
+output,
+ruby,
+section,
+summary,
+time,
+mark,
+audio,
+video {
+	margin: 0;
+	padding: 0;
+	border: 0;
+	font-size: 100%;
+	font: inherit;
+	vertical-align: baseline;
+}
+/* HTML5 display-role reset for older browsers */
+article,
+aside,
+details,
+figcaption,
+figure,
+footer,
+header,
+hgroup,
+menu,
+nav,
+section {
+	display: block;
+}
+body {
+	line-height: 1;
+}
+ol,
+ul {
+	list-style: none;
+}
+blockquote,
+q {
+	quotes: none;
+}
+blockquote:before,
+blockquote:after,
+q:before,
+q:after {
+	content: "";
+	content: none;
+}
+table {
+	border-collapse: collapse;
+	border-spacing: 0;
+}
+
+/* My CSS */
+/* Common Styles */
+/* CSS based on Assigment 1 */
+body {
+	font-family: Arial, Helvetica, sans-serif;
+	background-color: rgba(249, 247, 247, 1);
+}
+h1 {
+	font-size: 3vw;
+	padding: 10px 0px;
+}
+p {
+	line-height: 140%;
+	padding: 5px 30px;
+    font-size: 1.6vw;
+}
+
+.heading {
+	color: #112d4e;
+	font-weight: 600;
+	padding: 15px;
+	text-align: center;
+}
+.alignVertical {
+	vertical-align: middle;
+}
+
+
+.floatL {
+	padding-left: 10px;
+	float: left;
+	/* clear: both; */
+	padding: 3px;
+}
+
+footer {
+	font-size: 0.6vw;
+	background-color: white;
+	display: block;
+	text-align: center;
+	position: fixed;
+	bottom: 0;
+	width: 100%;
+	max-width: 100%;
+	border: 1px solid #dbe2ef;
+}
+.lightBorder {
+	border: 1px solid #dbe2ef;
+}
+
+/* Navigation Styles */
+/* CSS based on Assigment 1 */
+nav {width: 100%;
+border: 1px solid white;}
+
+nav ul {
+	list-style-type: none;
+	overflow: hidden;
+}
+nav ul li {
+	float: left;
+    list-style: none;
+    width: calc(100%/5);
+    width: 25%;
+    box-sizing:border-box;
+}
+nav a {
+	border: 1px solid white;
+    height: 20px;
+	border-radius: 3px;
+	background-color: #3f72af;
+    text-align: center;
+}
+nav ul li a {
+	color: white;
+	display: block;
+	font-weight: 700;
+	padding: 1px;
+}
+li a:hover {
+	background-color: #dbe2ef;
+	color: #112d4e;
+	border: 1px solid white;
+}
+
+/* Container Styles */
+/* CSS based on Assigment 1 */
+.container {
+	margin: 0 auto;
+	width: 70%;
+	padding: 10px 0px;
+	max-width: 100%;
+	text-align: center;
+}
+
+.center {
+	display: block;
+	margin-left: auto;
+	margin-right: auto;
+}
+
+/* Table Styles */
+/* CSS based on Assigment 1 */
+.styleTable {
+	border: 1px solid #112d4e;
+	border-collapse: separate;
+	border-spacing: 0;
+	line-height: 2em;
+	text-align: center;
+	margin: 0 auto;	
+}
+/* Table borders reference sitepoint.com */
+.styleTable tr :first-child td {
+	border-top: 3px solid #112d4e;
+}
+.styleTable tr :last-child td {
+	border-bottom: 3px solid #112d4e;
+}
+.styleTable tr :first-child td {
+	border-left: 3px solid #112d4e;
+}
+.styleTable tr :last-child td {
+	border-right: 3px solid #112d4e;
+}
+.styleTable th {
+	background-color: #3f72af;
+	border: 1px solid #112d4e;
+	color: white;
+	font-weight: 600;
+	padding: 5px 10px;
+	min-width: 10em;
+}
+
+.styleTable td {
+	background-color: #dbe2ef;
+	border: 1px solid #112d4e;
+	padding: 5px 10px;
+	vertical-align: middle;
+}
+
+/* Source: https://dzone.com/articles/using-csshtml-make-responsive Sample media query to support responsivness. */
